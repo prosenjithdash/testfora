@@ -1,0 +1,562 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    /* background-color: #060A2E; */
+    background-color: #03051b;
+    
+}
+
+/* Header CSS Container */
+#header{
+    width: 100%;
+    height: 100vh;
+
+}
+.profileImage{
+    
+    margin-top: 6%;
+    text-align: center;
+}
+.pImage{
+    border-radius: 150px;
+    transition: transform 0.5s;
+}
+.pImage:hover{
+    /* border: 0px; */
+    border-style: solid;
+    padding: 10px;
+    border-radius: 80%;
+    transform: scale(1.1);
+    border-color: #168eff;
+}
+.container{
+    padding: 30px 5%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 140px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+.logo,.contactWithMe{
+    color: white;
+}
+nav ul li a::after{
+    content: ' ';
+    width: 0%;
+    height: 3px;
+    /* background: linear-gradient(#170389, white); */
+    background: rgb(0, 170, 255);
+    position: absolute;
+    left:0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+/* Header text */
+.header_text{
+    margin-top: 5%;
+    width: 100%;
+    
+
+
+}
+.headerTitle p{
+    font-size: 50px;
+    align-items: center;
+    text-align: center;
+    /* color: rgb(0, 136, 255); */
+    /* color: #168eff; */
+    background: linear-gradient(#0650ff, rgb(48, 239, 213));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+.headerDescribe{
+  
+    align-items: center;
+    text-align: center;
+    padding-top: 3%;
+    font-size: 20px;
+    text-align: center; 
+    color: rgb(226, 230, 241);
+    font-weight: lighter;
+
+}
+.socialBtn{
+    
+
+    text-align: center;
+    
+    
+}
+
+
+
+/* About CSS Container */
+
+#about{
+    margin-top: 70px;
+    padding: 0px 10%;
+}
+.aboutTitle{
+    font-size: 60px;
+    width: bold;
+    text-align: center; 
+    
+    background: linear-gradient(#0650ff, rgb(48, 239, 213));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+
+    /* color: red; */
+    padding-bottom: 50px;
+}
+.aboutDescribe {
+    
+    font-size: 20px;
+    color: white;
+    border: 0px;
+    background-color: #0f123b;
+    border-radius: 20px;
+    border-style: solid;
+    padding: 30px;
+    transition: transform 0.5s;
+
+}
+.aboutDescribe:hover{
+    /* border: 1.2px;
+    border-color: #168eff; */
+    /* border-style: solid; */
+    border-radius: 20px;
+    transform: scale(1.1);
+    
+}
+.aboutContainer{
+    display: flex;
+    gap: 50px;
+}
+.about-col-1{
+    flex-basis: 65%;
+}
+.about-col-2 {
+    flex-basis: 35%;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 25px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    color: white;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #168eff;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+    
+}
+.tab-contents ul li{
+    list-style: none;
+    margin:10px 0;
+    color: white;
+    font-size: 20px;
+}
+.tab-contents ul li span{
+    color: #3f9aef;
+    font-family: 16px;
+
+}
+
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+/* Skills CSS Container */
+#skills{
+    margin-top: 150px;
+    padding: 0 20%; 
+}
+.skillsIcons:hover{
+  
+    /* border: 1.2px;
+    border-color: #168eff; */
+    /* border-style: solid; */
+    /* border-radius: 20px; */
+    transform: scale(1.1);
+}
+.skillsTitle{
+    font-size: 60px;
+    width: bold;
+    text-align: center;
+    /* color: #168eff; */
+    background: linear-gradient(#0650ff, rgb(48, 239, 213));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    padding-bottom: 50px;
+}
+.size{
+    width: 120px;
+    height: 120px;
+    border: 5px;
+    border-radius: 90px;
+}
+.sIcons1,.sIcons2,.sIcons3{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding-top: 50px;
+}
+.skillsIcons{
+    border: 0px;
+    background-color: #0f123b;
+    border-radius: 20px;
+    border-style: solid;
+    padding: 30px;
+    transition: transform 0.5s;
+
+     
+}
+
+/* Services CSS Container */
+#services{
+    /* padding-top: 50px;
+    margin-top: 160px; */
+    padding: 0 10%;
+}
+.servicesField{
+    font-size: 60px;
+        width: bold;
+        text-align: center;
+        /* color: #168eff; */
+        background: linear-gradient(#0650ff, rgb(48, 239, 213));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        padding-bottom: 50px;
+        margin-top: 150px;
+}
+.servicesFlex{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+
+}
+
+.service1,.service2,.service3{
+    border: 0px;
+    background-color: #0f123b;
+    border-radius: 20px;
+    border-style: solid;
+    padding: 30px;
+    transition: transform 0.5s;
+    
+}
+.service1:hover,.service2:hover,.service3:hover{
+    /* border: 1.2px;
+    border-color: #168eff; */
+    /* border-style: solid; */
+    /* border-radius: 20px; */
+    transform: scale(1.1);
+   
+   
+}
+.serviceImage{
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    border: 5px;
+    padding: 5px;
+    border-style: dotted;
+    border-color: #168eff;
+}
+.serviceTitle{
+    color: aliceblue;
+    font-size: 30px;
+    padding: 10px 0px;
+    width: bold;
+    
+}
+ 
+.servicesDescribe{
+    color: aliceblue;
+    font-size: 14px;
+    
+
+}
+
+/* My Projects CSS Container */
+#projects{
+    margin-top: 150px;
+    padding: 0 5%;
+
+    
+}
+.myProjectsTitle {
+    font-size: 60px;
+    width: bold;
+    text-align: center;
+    /* color: #168eff; */
+    background: linear-gradient(#0650ff, rgb(48, 239, 213));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    padding-bottom: 50px;
+    margin-top: 150px;
+}
+.work{
+    border-radius: 0px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+  
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background:linear-gradient(rgba(0,0,0,0.6),#168eff);
+    border-radius: 10px;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transform: 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a {
+    margin-top: 20px;
+    color: #168eff;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #168eff;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transform: background 0.5s;
+    
+}
+.btn:hover{
+    background:linear-gradient(#0650ff, rgb(48, 239, 213));
+    color: black;
+    font-size: 20px;
+}
+
+.CardContainer{
+    border: 0px;
+    border-style: solid;
+    border-color: #168eff;
+    background: whitesmoke;
+    border-radius: 20px;
+    transition: transform 0.5s;
+   
+}
+.CardContainer:hover{
+    transform: scale(1.1);
+}
+.projectDetails{
+    
+    padding: 30px 20px;
+}
+.first2ProjectFlex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+   
+
+}
+
+.usingTech{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    gap: 20px;
+    padding-bottom: 20px;
+   
+}
+.usingTech img{
+    border-radius: 80%;
+    border: 5px;
+}
+.svg{
+    width: 50px;
+    height: 50px;
+    color: rgb(207, 3, 3);
+    background-color: aliceblue;
+}
+
+/* Contact Container */
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-left{
+    flex-basis: 35%;
+ 
+}
+.contact-right{
+    flex-basis: 60%;
+
+}
+.contact-left p{
+    margin-top: 30px;
+    color: white;
+}
+.contact-left h1{
+    columns: white;
+}
+.contactMe{
+    color: white;
+    font-size: 70px;
+}
+.social-icons{
+    margin-top: 30px;
+    
+}
+.iconFILG{
+    border: 0px;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+
+}
+.contact-left p i{
+    color: #3f9aef;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.contact-right form{
+    width: 100%;
+
+}
+.email,.phone{
+    font-size: 20px;
+}
+form input, form textarea{
+    width: 100%;;
+    border: 0;
+    outline: none;
+    background:#262626;
+    padding: 20px;
+    margin: 15px 0;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 20px;
+}
+/* .btn{
+    background-color: #168eff;
+    padding: 10px 40px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 40px;
+} */
+/* .btn2 {
+    padding: 5px 770px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 10px;
+} */
+.btn.btn2{
+    display: inline-block;
+        background: linear-gradient(#0650ff, rgb(48, 239, 213));
+
+}
+
+.ic{
+    font-size: 30px;
+    color: #0a77ec;
+    padding: 10px;
+}
+.ic:hover{
+    border: 3px;
+    border-style: solid;
+    border-color: white;
+    padding: 5px;
+    border-radius: 100%;
+
+}
+
+/* CSS FOR SMALL SCREENS */
+@media only screen and (max-width:600px) {
+    
+}
